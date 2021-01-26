@@ -9,8 +9,10 @@
 #import "OSSpinLockDemo.h"
 #import "OSUnfairLockDemo.h"
 #import "MutexDemo.h"
+#import "MutexDemo1.h"
 
 #import <libkern/OSAtomic.h>
+#import <pthread.h>
 
 
 @interface ViewController ()
@@ -20,18 +22,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[MutexDemo new] ticketTest];
+    [[MutexDemo1 new] otherTest];
 }
 
 - (void)asyncSaleTicket{
+    // 初始化属性
+    pthread_mutexattr_t attr;
+    pthread_mutexattr_init(&attr);
+    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
     // 初始化锁
-    OSSpinLock lock = OS_SPINLOCK_INIT;
-    // 尝试加锁（如果需要等待就不加锁，返回false，如果不需要等待就加锁，返回true）
-    OSSpinLockTry(&lock);
-    // 加锁
-    OSSpinLockLock(&lock);
-    // 解锁
-    OSSpinLockUnlock(&lock);
+    pthread_mutex_t mutex;
+    pthread_mutex_init(&mutex, &attr);
 }
 
 

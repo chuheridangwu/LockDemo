@@ -58,6 +58,11 @@
         }
     });
 }
+
+- (void)otherTest{
+
+}
+
 #pragma mark -- 暴露方法给子类实现
 - (void)__saveMoney{
     _moneyCount += 20;

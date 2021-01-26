@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BaseDemo : NSObject
 - (void)moneyTest;
 - (void)ticketTest;
+- (void)otherTest; // 递归锁
 #pragma mark -- 暴露方法给子类实现
 - (void)__saveMoney;
 - (void)__drewMoney;
