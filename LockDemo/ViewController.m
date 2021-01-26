@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import "OSSpinLockDemo.h"
 #import "OSUnfairLockDemo.h"
+#import "MutexDemo.h"
+
 #import <libkern/OSAtomic.h>
 
 
@@ -18,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[OSUnfairLockDemo new] ticketTest];
+    [[MutexDemo new] ticketTest];
 }
 
 - (void)asyncSaleTicket{
