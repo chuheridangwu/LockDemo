@@ -16,6 +16,9 @@
 		8762724025BE67420071158E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762723F25BE67420071158E /* main.m */; };
 		8762724A25BE67420071158E /* LockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762724925BE67420071158E /* LockDemoTests.m */; };
 		8762725525BE67420071158E /* LockDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762725425BE67420071158E /* LockDemoUITests.m */; };
+		8762726925BE68A30071158E /* BaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762726825BE68A30071158E /* BaseDemo.m */; };
+		8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762727125BE6BA40071158E /* OSSpinLockDemo.m */; };
+		8762727B25BE71980071158E /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762727A25BE71980071158E /* OSUnfairLockDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		8762725025BE67420071158E /* LockDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8762725425BE67420071158E /* LockDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockDemoUITests.m; sourceTree = "<group>"; };
 		8762725625BE67420071158E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8762726725BE68A30071158E /* BaseDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDemo.h; sourceTree = "<group>"; };
+		8762726825BE68A30071158E /* BaseDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemo.m; sourceTree = "<group>"; };
+		8762727025BE6BA40071158E /* OSSpinLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		8762727125BE6BA40071158E /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
+		8762727925BE71980071158E /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
+		8762727A25BE71980071158E /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,7 @@
 				8762723125BE673F0071158E /* SceneDelegate.m */,
 				8762723325BE673F0071158E /* ViewController.h */,
 				8762723425BE673F0071158E /* ViewController.m */,
+				8762726625BE68880071158E /* Locks */,
 				8762723625BE673F0071158E /* Main.storyboard */,
 				8762723925BE67420071158E /* Assets.xcassets */,
 				8762723B25BE67420071158E /* LaunchScreen.storyboard */,
@@ -135,6 +145,19 @@
 				8762725625BE67420071158E /* Info.plist */,
 			);
 			path = LockDemoUITests;
+			sourceTree = "<group>";
+		};
+		8762726625BE68880071158E /* Locks */ = {
+			isa = PBXGroup;
+			children = (
+				8762726725BE68A30071158E /* BaseDemo.h */,
+				8762726825BE68A30071158E /* BaseDemo.m */,
+				8762727025BE6BA40071158E /* OSSpinLockDemo.h */,
+				8762727125BE6BA40071158E /* OSSpinLockDemo.m */,
+				8762727925BE71980071158E /* OSUnfairLockDemo.h */,
+				8762727A25BE71980071158E /* OSUnfairLockDemo.m */,
+			);
+			path = Locks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8762727B25BE71980071158E /* OSUnfairLockDemo.m in Sources */,
 				8762723525BE673F0071158E /* ViewController.m in Sources */,
 				8762722F25BE673F0071158E /* AppDelegate.m in Sources */,
+				8762726925BE68A30071158E /* BaseDemo.m in Sources */,
 				8762724025BE67420071158E /* main.m in Sources */,
 				8762723225BE673F0071158E /* SceneDelegate.m in Sources */,
+				8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LockDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LockDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
