@@ -10,6 +10,7 @@
 #import "OSUnfairLockDemo.h"
 #import "MutexDemo.h"
 #import "MutexDemo1.h"
+#import "MutexDemo2.h"
 
 #import <libkern/OSAtomic.h>
 #import <pthread.h>
@@ -22,17 +23,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[OSUnfairLockDemo new] ticketTest];
+    [[MutexDemo2 new] otherTest];
 }
 
 - (void)asyncSaleTicket{
-    // 初始化属性
-    pthread_mutexattr_t attr;
-    pthread_mutexattr_init(&attr);
-    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
     // 初始化锁
     pthread_mutex_t mutex;
-    pthread_mutex_init(&mutex, &attr);
+    pthread_mutex_init(&mutex, NULL);
+    // 初始化条件
+    pthread_cond_t cond;
+    pthread_cond_init(&cond, NULL);
+    // 等待条件（进入休眠，放开mutex锁，被唤醒后，会重新加锁）
+    pthread_cond_wait(&cond, &mutex);
+    // 激活一个等待该条件的线程
+    pthread_cond_signal(&cond);
+    // 激活所有等待该条件的线程
+    pthread_cond_broadcast(&cond);
+    // 销毁资源
+    pthread_mutex_destroy(&mutex);
+    pthread_cond_destroy(&cond);
+
+   
 }
 /*
  //OSSpinLock 汇编

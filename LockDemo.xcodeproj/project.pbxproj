@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		87441B3E25BFACB400C38D6D /* MutexDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87441B3D25BFACB400C38D6D /* MutexDemo.m */; };
 		87441B4725BFD78800C38D6D /* MutexDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 87441B4625BFD78800C38D6D /* MutexDemo1.m */; };
+		87441B4D25C002EA00C38D6D /* MutexDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 87441B4C25C002EA00C38D6D /* MutexDemo2.m */; };
 		8762722F25BE673F0071158E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762722E25BE673F0071158E /* AppDelegate.m */; };
 		8762723225BE673F0071158E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762723125BE673F0071158E /* SceneDelegate.m */; };
 		8762723525BE673F0071158E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762723425BE673F0071158E /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		87441B3D25BFACB400C38D6D /* MutexDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexDemo.m; sourceTree = "<group>"; };
 		87441B4525BFD78800C38D6D /* MutexDemo1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexDemo1.h; sourceTree = "<group>"; };
 		87441B4625BFD78800C38D6D /* MutexDemo1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexDemo1.m; sourceTree = "<group>"; };
+		87441B4B25C002EA00C38D6D /* MutexDemo2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexDemo2.h; sourceTree = "<group>"; };
+		87441B4C25C002EA00C38D6D /* MutexDemo2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexDemo2.m; sourceTree = "<group>"; };
 		8762722A25BE673F0071158E /* LockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8762722D25BE673F0071158E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8762722E25BE673F0071158E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				87441B3D25BFACB400C38D6D /* MutexDemo.m */,
 				87441B4525BFD78800C38D6D /* MutexDemo1.h */,
 				87441B4625BFD78800C38D6D /* MutexDemo1.m */,
+				87441B4B25C002EA00C38D6D /* MutexDemo2.h */,
+				87441B4C25C002EA00C38D6D /* MutexDemo2.m */,
 			);
 			path = Locks;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				8762724025BE67420071158E /* main.m in Sources */,
 				8762723225BE673F0071158E /* SceneDelegate.m in Sources */,
 				8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */,
+				87441B4D25C002EA00C38D6D /* MutexDemo2.m in Sources */,
 				87441B4725BFD78800C38D6D /* MutexDemo1.m in Sources */,
 				87441B3E25BFACB400C38D6D /* MutexDemo.m in Sources */,
 			);
