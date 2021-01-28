@@ -14,7 +14,7 @@
 #import "NSLockDemo.h"
 #import "NSRecursiveLockDemo.h"
 #import "NSConditionDemo.h"
-
+#import "NSConditionLockDemo.h"
 
 #import <libkern/OSAtomic.h>
 #import <pthread.h>
@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSConditionDemo new] otherTest];
+    [[NSConditionLockDemo new] ticketTest];
 }
 
 - (void)asyncSaleTicket{
