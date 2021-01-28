@@ -15,6 +15,8 @@
 #import "NSRecursiveLockDemo.h"
 #import "NSConditionDemo.h"
 #import "NSConditionLockDemo.h"
+#import "SerialQueue.h"
+#import "SemaphoreDemo.h"
 
 #import <libkern/OSAtomic.h>
 #import <pthread.h>
@@ -27,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSConditionLockDemo new] ticketTest];
+    [[SemaphoreDemo new] ticketTest];
 }
 
 - (void)asyncSaleTicket{
@@ -47,7 +49,17 @@
     pthread_mutex_destroy(&mutex);
     pthread_cond_destroy(&cond);
 
-   
+    
+    // 信号量初始值
+    int value = 1;
+    // 初始化信号量
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(value);
+    // 如果信号量的值 <= 0,当前线程会进入休眠等待 （直到信号量的值>0）,等待时间是传入的时间，DISPATCH_TIME_FOREVER是一直等
+    // 如果信号量的值 > 0, 信号量 -1, 然后向下继续执行代码
+    dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);
+    // 信号量的值 + 1
+    dispatch_semaphore_signal(semaphore);
+    
 }
 /*
  //OSSpinLock 汇编
