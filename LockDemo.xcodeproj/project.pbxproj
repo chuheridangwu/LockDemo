@@ -25,6 +25,7 @@
 		87D014B925C25D62000670CF /* NSRecursiveLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014B825C25D62000670CF /* NSRecursiveLockDemo.m */; };
 		87D014BF25C26225000670CF /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014BE25C26225000670CF /* NSConditionDemo.m */; };
 		87D014C525C26440000670CF /* NSConditionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014C425C26440000670CF /* NSConditionLockDemo.m */; };
+		87D014CB25C26768000670CF /* SerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014CA25C26768000670CF /* SerialQueue.m */; };
 		87DEF36725C19697003609B8 /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DEF36625C19697003609B8 /* NSLockDemo.m */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		87D014BE25C26225000670CF /* NSConditionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionDemo.m; sourceTree = "<group>"; };
 		87D014C325C26440000670CF /* NSConditionLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockDemo.h; sourceTree = "<group>"; };
 		87D014C425C26440000670CF /* NSConditionLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockDemo.m; sourceTree = "<group>"; };
+		87D014C925C26768000670CF /* SerialQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialQueue.h; sourceTree = "<group>"; };
+		87D014CA25C26768000670CF /* SerialQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialQueue.m; sourceTree = "<group>"; };
 		87DEF36525C19697003609B8 /* NSLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
 		87DEF36625C19697003609B8 /* NSLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +194,8 @@
 				87D014BE25C26225000670CF /* NSConditionDemo.m */,
 				87D014C325C26440000670CF /* NSConditionLockDemo.h */,
 				87D014C425C26440000670CF /* NSConditionLockDemo.m */,
+				87D014C925C26768000670CF /* SerialQueue.h */,
+				87D014CA25C26768000670CF /* SerialQueue.m */,
 			);
 			path = Locks;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				8762722F25BE673F0071158E /* AppDelegate.m in Sources */,
 				8762726925BE68A30071158E /* BaseDemo.m in Sources */,
 				8762724025BE67420071158E /* main.m in Sources */,
+				87D014CB25C26768000670CF /* SerialQueue.m in Sources */,
 				87D014BF25C26225000670CF /* NSConditionDemo.m in Sources */,
 				87D014C525C26440000670CF /* NSConditionLockDemo.m in Sources */,
 				8762723225BE673F0071158E /* SceneDelegate.m in Sources */,
