@@ -23,6 +23,7 @@
 		8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762727125BE6BA40071158E /* OSSpinLockDemo.m */; };
 		8762727B25BE71980071158E /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762727A25BE71980071158E /* OSUnfairLockDemo.m */; };
 		87D014B925C25D62000670CF /* NSRecursiveLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014B825C25D62000670CF /* NSRecursiveLockDemo.m */; };
+		87D014BF25C26225000670CF /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014BE25C26225000670CF /* NSConditionDemo.m */; };
 		87DEF36725C19697003609B8 /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DEF36625C19697003609B8 /* NSLockDemo.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		8762727A25BE71980071158E /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
 		87D014B725C25D62000670CF /* NSRecursiveLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockDemo.h; sourceTree = "<group>"; };
 		87D014B825C25D62000670CF /* NSRecursiveLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockDemo.m; sourceTree = "<group>"; };
+		87D014BD25C26225000670CF /* NSConditionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionDemo.h; sourceTree = "<group>"; };
+		87D014BE25C26225000670CF /* NSConditionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionDemo.m; sourceTree = "<group>"; };
 		87DEF36525C19697003609B8 /* NSLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
 		87DEF36625C19697003609B8 /* NSLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +184,8 @@
 				87DEF36625C19697003609B8 /* NSLockDemo.m */,
 				87D014B725C25D62000670CF /* NSRecursiveLockDemo.h */,
 				87D014B825C25D62000670CF /* NSRecursiveLockDemo.m */,
+				87D014BD25C26225000670CF /* NSConditionDemo.h */,
+				87D014BE25C26225000670CF /* NSConditionDemo.m */,
 			);
 			path = Locks;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				8762722F25BE673F0071158E /* AppDelegate.m in Sources */,
 				8762726925BE68A30071158E /* BaseDemo.m in Sources */,
 				8762724025BE67420071158E /* main.m in Sources */,
+				87D014BF25C26225000670CF /* NSConditionDemo.m in Sources */,
 				8762723225BE673F0071158E /* SceneDelegate.m in Sources */,
 				8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */,
 				87D014B925C25D62000670CF /* NSRecursiveLockDemo.m in Sources */,

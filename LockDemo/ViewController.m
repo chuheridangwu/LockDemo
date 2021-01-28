@@ -13,6 +13,8 @@
 #import "MutexDemo2.h"
 #import "NSLockDemo.h"
 #import "NSRecursiveLockDemo.h"
+#import "NSConditionDemo.h"
+
 
 #import <libkern/OSAtomic.h>
 #import <pthread.h>
@@ -25,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSRecursiveLockDemo new] otherTest];
+    [[NSConditionDemo new] otherTest];
 }
 
 - (void)asyncSaleTicket{
