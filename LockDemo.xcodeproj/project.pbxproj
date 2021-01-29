@@ -22,6 +22,7 @@
 		8762726925BE68A30071158E /* BaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762726825BE68A30071158E /* BaseDemo.m */; };
 		8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762727125BE6BA40071158E /* OSSpinLockDemo.m */; };
 		8762727B25BE71980071158E /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8762727A25BE71980071158E /* OSUnfairLockDemo.m */; };
+		87B5692725C2C8C0002AACBE /* SemaphoreDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B5692625C2C8C0002AACBE /* SemaphoreDemo2.m */; };
 		87C9A63125C293DF0016379A /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A63025C293DF0016379A /* SynchronizedDemo.m */; };
 		87D014B925C25D62000670CF /* NSRecursiveLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014B825C25D62000670CF /* NSRecursiveLockDemo.m */; };
 		87D014BF25C26225000670CF /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014BE25C26225000670CF /* NSConditionDemo.m */; };
@@ -79,6 +80,8 @@
 		8762727125BE6BA40071158E /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
 		8762727925BE71980071158E /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
 		8762727A25BE71980071158E /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		87B5692525C2C8C0002AACBE /* SemaphoreDemo2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreDemo2.h; sourceTree = "<group>"; };
+		87B5692625C2C8C0002AACBE /* SemaphoreDemo2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreDemo2.m; sourceTree = "<group>"; };
 		87C9A62F25C293DF0016379A /* SynchronizedDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
 		87C9A63025C293DF0016379A /* SynchronizedDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
 		87D014B725C25D62000670CF /* NSRecursiveLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockDemo.h; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				87D014CA25C26768000670CF /* SerialQueue.m */,
 				87D014CF25C2795E000670CF /* SemaphoreDemo.h */,
 				87D014D025C2795E000670CF /* SemaphoreDemo.m */,
+				87B5692525C2C8C0002AACBE /* SemaphoreDemo2.h */,
+				87B5692625C2C8C0002AACBE /* SemaphoreDemo2.m */,
 				87C9A62F25C293DF0016379A /* SynchronizedDemo.h */,
 				87C9A63025C293DF0016379A /* SynchronizedDemo.m */,
 			);
@@ -355,6 +360,7 @@
 				87441B4D25C002EA00C38D6D /* MutexDemo2.m in Sources */,
 				87441B4725BFD78800C38D6D /* MutexDemo1.m in Sources */,
 				87441B3E25BFACB400C38D6D /* MutexDemo.m in Sources */,
+				87B5692725C2C8C0002AACBE /* SemaphoreDemo2.m in Sources */,
 				87DEF36725C19697003609B8 /* NSLockDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

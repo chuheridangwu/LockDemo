@@ -17,6 +17,7 @@
 #import "NSConditionLockDemo.h"
 #import "SerialQueue.h"
 #import "SemaphoreDemo.h"
+#import "SemaphoreDemo2.h"
 #import "SynchronizedDemo.h"
 
 #import <libkern/OSAtomic.h>
@@ -30,7 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[SynchronizedDemo new] moneyTest];
+    [[SemaphoreDemo2 new] ticketTest];
 }
 
 - (void)asyncSaleTicket{
