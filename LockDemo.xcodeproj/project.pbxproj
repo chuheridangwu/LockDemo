@@ -30,6 +30,8 @@
 		87D014CB25C26768000670CF /* SerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014CA25C26768000670CF /* SerialQueue.m */; };
 		87D014D125C2795E000670CF /* SemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D014D025C2795E000670CF /* SemaphoreDemo.m */; };
 		87DEF36725C19697003609B8 /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DEF36625C19697003609B8 /* NSLockDemo.m */; };
+		87F1DE9C25C3FFEF00B02199 /* PthreadRwLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F1DE9B25C3FFEF00B02199 /* PthreadRwLock.m */; };
+		87F1DEA225C4033100B02199 /* BarrierDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F1DEA125C4033100B02199 /* BarrierDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,10 @@
 		87D014D025C2795E000670CF /* SemaphoreDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreDemo.m; sourceTree = "<group>"; };
 		87DEF36525C19697003609B8 /* NSLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
 		87DEF36625C19697003609B8 /* NSLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		87F1DE9A25C3FFEF00B02199 /* PthreadRwLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadRwLock.h; sourceTree = "<group>"; };
+		87F1DE9B25C3FFEF00B02199 /* PthreadRwLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadRwLock.m; sourceTree = "<group>"; };
+		87F1DEA025C4033100B02199 /* BarrierDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarrierDemo.h; sourceTree = "<group>"; };
+		87F1DEA125C4033100B02199 /* BarrierDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrierDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,10 @@
 				87B5692625C2C8C0002AACBE /* SemaphoreDemo2.m */,
 				87C9A62F25C293DF0016379A /* SynchronizedDemo.h */,
 				87C9A63025C293DF0016379A /* SynchronizedDemo.m */,
+				87F1DE9A25C3FFEF00B02199 /* PthreadRwLock.h */,
+				87F1DE9B25C3FFEF00B02199 /* PthreadRwLock.m */,
+				87F1DEA025C4033100B02199 /* BarrierDemo.h */,
+				87F1DEA125C4033100B02199 /* BarrierDemo.m */,
 			);
 			path = Locks;
 			sourceTree = "<group>";
@@ -348,6 +358,7 @@
 				8762723525BE673F0071158E /* ViewController.m in Sources */,
 				8762722F25BE673F0071158E /* AppDelegate.m in Sources */,
 				87C9A63125C293DF0016379A /* SynchronizedDemo.m in Sources */,
+				87F1DEA225C4033100B02199 /* BarrierDemo.m in Sources */,
 				8762726925BE68A30071158E /* BaseDemo.m in Sources */,
 				8762724025BE67420071158E /* main.m in Sources */,
 				87D014D125C2795E000670CF /* SemaphoreDemo.m in Sources */,
@@ -356,6 +367,7 @@
 				87D014C525C26440000670CF /* NSConditionLockDemo.m in Sources */,
 				8762723225BE673F0071158E /* SceneDelegate.m in Sources */,
 				8762727225BE6BA40071158E /* OSSpinLockDemo.m in Sources */,
+				87F1DE9C25C3FFEF00B02199 /* PthreadRwLock.m in Sources */,
 				87D014B925C25D62000670CF /* NSRecursiveLockDemo.m in Sources */,
 				87441B4D25C002EA00C38D6D /* MutexDemo2.m in Sources */,
 				87441B4725BFD78800C38D6D /* MutexDemo1.m in Sources */,

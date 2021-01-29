@@ -19,6 +19,8 @@
 #import "SemaphoreDemo.h"
 #import "SemaphoreDemo2.h"
 #import "SynchronizedDemo.h"
+#import "PthreadRwLock.h"
+#import "BarrierDemo.h"
 
 #import <libkern/OSAtomic.h>
 #import <pthread.h>
@@ -31,7 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[SemaphoreDemo2 new] ticketTest];
+    [[BarrierDemo new] otherTest];
 }
 
 - (void)asyncSaleTicket{
