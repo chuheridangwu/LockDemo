@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B2030933-CAF2-46F9-B18D-2732DCE6A686"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "53EFCEDA-887C-48AB-B855-850335D9FFEF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "643376E0-F38D-488D-A9C6-4461742CD499"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LockDemo/Locks/SemaphoreDemo2.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-__saleTicket"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "643376E0-F38D-488D-A9C6-4461742CD499 - cd35a6b14d5ad7c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SemaphoreDemo2 __saleTicket]"
+                  moduleName = "LockDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mlive/Desktop/LockDemo/LockDemo/Locks/SemaphoreDemo2.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "643376E0-F38D-488D-A9C6-4461742CD499 - 6f945c94883fa649"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[SemaphoreDemo2 __saleTicket]_block_invoke"
+                  moduleName = "LockDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mlive/Desktop/LockDemo/LockDemo/Locks/SemaphoreDemo2.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
